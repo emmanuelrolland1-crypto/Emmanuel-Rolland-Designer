@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ENGIE — étude de cas</title>
+<meta name="description" content="ENGIE : Design System, application mobile et espace client BtoC.">
+<meta name="author" content="Emmanuel Rolland">
+<meta property="og:title" content="ENGIE — étude de cas">
+<meta property="og:description" content="ENGIE : Design System, application mobile et espace client BtoC.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/emmanuel-rolland-portrait.webp">
+<meta name="theme-color" content="#0C0C0E">
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/engie.css">
+</head>
+<body>
+<div id="app"></div>
+<noscript><p style="color:#EDEBE6;font-family:sans-serif;padding:40px">Ce site nécessite JavaScript.</p></noscript>
+<template id="dc-template">
+<div id="page-top" style="font-family: 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; color: #EDEBE6; background: #0C0C0E; min-height: 100%; overflow: hidden">
+
+  <header style="position: sticky; top: 0; z-index: 20; background: rgba(12,12,14,.78); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(237,235,230,.07)">
+    <nav aria-label="Navigation principale" style="max-width: 1280px; margin: 0 auto; padding: 18px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
+      <a href="index.html#projets" class="nav-a" style="display: inline-flex; align-items: center; gap: 10px; font-size: 14px; min-height: 44px">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 8H3M7 4L3 8l4 4"></path></svg>
+        Tous les projets
+      </a>
+      <a href="index.html#page-top" aria-label="Emmanuel Rolland — accueil" style="display: flex; align-items: center; min-height: 44px"><img src="assets/images/logo-er.webp" alt="" style="display: block; height: 30px; width: auto"></a>
+      <a class="btn-light" href="index.html#contact" style="background: #EDEBE6; color: #0C0C0E; padding: 10px 18px; border-radius: 999px; font-weight: 500; font-size: 14px">Me contacter</a>
+    </nav>
+  </header>
+
+  <section style="max-width: 1280px; margin: 0 auto; padding: 88px 40px 64px; display: flex; flex-direction: column; gap: 36px">
+    <span class="rise" style="font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #8E8C96">Étude de cas — ENGIE</span>
+    <h1 class="rise d1" style="margin: 0; max-width: 1100px; font-family: 'Instrument Serif', 'Times New Roman', serif; font-weight: 400; font-size: clamp(52px, 6.4vw, 100px); line-height: 0.98; letter-spacing: -0.02em; text-wrap: balance">Une nouvelle expérience client <em style="color: #B3B0FF">autour de l’énergie.</em></h1>
+    <dl class="rise d2" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 24px; border-top: 1px solid rgba(237,235,230,.12); padding-top: 28px">
+      <div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-size: 13px; color: #8E8C96">Rôle</dt><dd style="margin: 0; font-size: 16px">Lead Designer &amp; direction artistique</dd></div>
+      <div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-size: 13px; color: #8E8C96">Périmètre</dt><dd style="margin: 0; font-size: 16px">Design System, app mobile, espace client web</dd></div>
+      <div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-size: 13px; color: #8E8C96">Cible</dt><dd style="margin: 0; font-size: 16px">Particuliers (BtoC)</dd></div>    </dl>
+  </section>
+
+  <section style="max-width: 1280px; margin: 0 auto; padding: 0 40px 72px">
+    <img src="assets/images/engie-lifestyle.webp" alt="Écran « Mon contrat » de l’app ENGIE, utilisée en situation par une cliente" style="display: block; width: 100%; border-radius: 24px; aspect-ratio: 1800 / 1201; object-fit: cover">
+  </section>
+
+  <section style="max-width: 1280px; margin: 0 auto; padding: 24px 40px 96px; display: flex; flex-wrap: wrap; gap: 32px 64px">
+    <h2 style="flex: 1 1 240px; margin: 0; font-size: 14px; font-weight: 500; color: #B3B0FF">Problématique</h2>
+    <p style="flex: 3 1 560px; min-width: 0; margin: 0; font-family: 'Instrument Serif', serif; font-size: clamp(28px, 2.6vw, 38px); line-height: 1.22; color: #E2E0E6; text-wrap: pretty">Concevoir une nouvelle expérience client autour de la gestion de l’énergie, à travers la refonte complète des interfaces et la création d’un Design System fédérateur.</p>
+  </section>
+
+  <!-- SHOWCASE (interactive) -->
+  <section aria-label="Livrables" style="background: radial-gradient(ellipse at 50% 30%, #142A3A, #101013 65%); border-top: 1px solid rgba(237,235,230,.07); border-bottom: 1px solid rgba(237,235,230,.07)">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 88px 40px; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+        <h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 52px; line-height: 1">{{title}}</h2>
+        <div role="tablist" aria-label="Livrables" style="display: flex; gap: 8px; flex-wrap: wrap">
+          <sc-for list="{{tabs}}" as="t" hint-placeholder-count="3">
+            <button type="button" role="tab" class="tab" aria-selected="{{t.sel}}" onClick="{{t.pick}}" style="min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid {{t.border}}; background: {{t.bg}}; color: {{t.color}}; font: inherit; font-size: 14px; cursor: pointer">{{t.label}}</button>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="position: relative; width: 100%; aspect-ratio: 1800 / 1201; border-radius: 24px; overflow: hidden">
+        <sc-for list="{{tabs}}" as="t" hint-placeholder-count="4">
+          <img class="gimg" src="{{t.src}}" alt="{{t.alt}}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: {{t.fit}}; opacity: {{t.op}}; transform: {{t.tf}}">
+        </sc-for>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap">
+        <p style="margin: 0; max-width: 760px; font-size: 16px; line-height: 1.65; color: #B5B3BC">{{desc}}</p>
+        <div style="display: flex; gap: 10px">
+          <button type="button" class="icon-btn" onClick="{{prev}}" aria-label="Visuel précédent" style="width: 48px; height: 48px; border-radius: 50%; border: 1px solid rgba(237,235,230,.2); background: transparent; color: #EDEBE6; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 8H3M7 4L3 8l4 4"></path></svg></button>
+          <button type="button" class="icon-btn" onClick="{{next}}" aria-label="Visuel suivant" style="width: 48px; height: 48px; border-radius: 50%; border: 1px solid rgba(237,235,230,.2); background: transparent; color: #EDEBE6; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"></path></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 1280px; margin: 0 auto; padding: 112px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(480px, 100%), 1fr)); gap: 56px">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <span style="font-size: 13px; color: #B3B0FF">01 — Socle</span>
+      <h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 44px; line-height: 1.04">Un Design System fédérateur</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B5B3BC">J’ai conçu et déployé le nouveau Design System d’ENGIE, destiné à harmoniser l’ensemble des produits digitaux du groupe. Ce socle visuel et fonctionnel a permis d’unifier les expériences tout en accélérant la conception et la production des interfaces.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <span style="font-size: 13px; color: #B3B0FF">02 — Refonte</span>
+      <h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 44px; line-height: 1.04">App mobile &amp; espace client</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B5B3BC">J’ai ensuite dirigé la refonte complète de l’application mobile et de l’espace client web, en assurant la direction artistique et la cohérence UX/UI entre les différents supports. Une étape clé dans la modernisation de l’écosystème digital d’ENGIE.</p>
+    </div>
+  </section>
+
+  <a class="next" href="aroma-zone.html#page-top" style="display: block; border-top: 1px solid rgba(237,235,230,.07)">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 72px 40px 88px; display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <span style="font-size: 13px; color: #8E8C96">Projet suivant</span>
+        <span style="font-family: 'Instrument Serif', serif; font-size: clamp(44px, 6vw, 88px); line-height: 1">Aroma Zone</span>
+      </div>
+      <svg class="next-arrow" aria-hidden="true" width="56" height="56" viewBox="0 0 16 16" fill="none" stroke="#B3B0FF" stroke-width="0.8"><path d="M3 8h10M9 4l4 4-4 4"></path></svg>
+    </div>
+  </a>
+</div>
+</template>
+<script type="text/x-dc" data-props='{}'>
+class Component extends DCLogic {
+  componentDidMount() {
+    const run = () => { try { const el = document.getElementById('page-top'); let n = el; while (n) { if (n.scrollTop) n.scrollTop = 0; n = n.parentElement; } window.scrollTo(0, 0); if (document.scrollingElement) document.scrollingElement.scrollTop = 0; } catch (e) {} };
+    run(); setTimeout(run, 30); setTimeout(run, 250);
+  }
+  state = { i: 0 };
+  renderVals() {
+    const T = [
+      { label: 'App mobile', title: 'Application mobile', src: 'assets/images/engie-app-dark.webp', fit: 'cover', alt: 'Trois écrans de l’application mobile ENGIE', desc: 'Un accueil par contrat, la prochaine mensualité en évidence, des raccourcis Assistance, Documents et Paiement, et une tab bar repensée.' },
+      { label: 'Espace client', title: 'Espace client web', src: 'assets/images/engie-desktop.webp', fit: 'contain', alt: 'Tableau de bord de l’espace client web ENGIE', desc: 'Un tableau de bord plus chaleureux : mensualité, consommation électricité et gaz, programme pour agir et justificatifs en un clic.' },
+      { label: 'Responsive', title: 'Desktop & mobile', src: 'assets/images/engie-web-dark.webp', fit: 'cover', alt: 'Espace client ENGIE en version desktop et mobile', desc: 'Le même espace client, décliné du desktop au mobile sans perte d’information.' },
+      { label: 'Design System', title: 'Design System', src: 'assets/images/engie-ds-dark.webp', fit: 'cover', alt: 'Composants du Design System ENGIE : boutons, icônes, tab bar', desc: 'Boutons, iconographie et tab bar : le socle commun qui unifie les produits digitaux du groupe et accélère la production.' }
+    ];
+    const i = this.state.i;
+    const n = T.length;
+    const tabs = T.map((t, k) => {
+      const on = k === i;
+      return { ...t, sel: on ? 'true' : 'false', op: on ? 1 : 0, tf: on ? 'scale(1)' : 'scale(1.03)', bg: on ? '#EDEBE6' : 'transparent', color: on ? '#0C0C0E' : '#C9C7CF', border: on ? '#EDEBE6' : 'rgba(237,235,230,.18)', pick: () => this.setState({ i: k }) };
+    });
+    return { tabs, title: T[i].title, desc: T[i].desc, prev: () => this.setState({ i: (i - 1 + n) % n }), next: () => this.setState({ i: (i + 1) % n }) };
+  }
+}
+</script>
+<script src="assets/js/dc-runtime.js"></script>
+</body>
+</html>

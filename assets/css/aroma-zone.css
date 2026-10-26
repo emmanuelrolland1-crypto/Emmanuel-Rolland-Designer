@@ -1,0 +1,16 @@
+/* Aroma Zone — étude de cas */
+html{scroll-behavior:smooth}
+body{margin:0;background:#0C0C0E}
+a{color:#EDEBE6;text-decoration:none}a:hover{color:#B3B0FF}
+*{box-sizing:border-box}
+.nav-a{color:#A3A1AA;transition:color .2s}.nav-a:hover{color:#EDEBE6}
+.btn-light{transition:background .25s}.btn-light:hover{background:#FFFFFF;color:#0C0C0E}
+.row{transition:background .25s,border-color .25s}.row:hover{background:rgba(237,235,230,.04)}
+.scr{transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.icon-btn{transition:background .2s,border-color .2s}.icon-btn:hover{background:rgba(237,235,230,.08);border-color:rgba(237,235,230,.4)}
+.fanph{transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.fan:hover .f1{transform:translateX(-14%) rotate(-6deg)}
+.fan:hover .f3{transform:translateX(14%) rotate(6deg)}
+.next-arrow{transition:transform .35s}.next:hover .next-arrow{transform:translateX(8px)}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.rise{animation:rise 1s cubic-bezier(.2,.7,.2,1) both}.d1{animation-delay:.1s}.d2{animation-delay:.2s}

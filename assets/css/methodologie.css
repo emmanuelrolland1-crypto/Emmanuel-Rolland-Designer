@@ -1,0 +1,20 @@
+/* Méthodologie UX Research */
+html{scroll-behavior:smooth}
+body{margin:0;background:#0C0C0E}
+a{color:#EDEBE6;text-decoration:none}a:hover{color:#B3B0FF}
+*{box-sizing:border-box}
+.nav-a{color:#A3A1AA;transition:color .2s}.nav-a:hover{color:#EDEBE6}
+.btn-light{transition:background .25s}.btn-light:hover{background:#FFFFFF;color:#0C0C0E}
+.step{transition:background .3s,border-color .3s,color .3s}
+.step:hover{border-color:rgba(237,235,230,.4)}
+.bar{transition:width .7s cubic-bezier(.2,.7,.2,1)}
+.tab{transition:background .25s,color .25s,border-color .25s}.tab:hover{border-color:rgba(237,235,230,.45)}
+.pod img{transition:transform .9s cubic-bezier(.2,.7,.2,1)}.pod:hover img{transform:scale(1.03)}
+.pod-play{transition:transform .4s cubic-bezier(.2,.7,.2,1),background .3s}.pod:hover .pod-play{transform:scale(1.1);background:#FFFFFF}
+.gimg{transition:opacity .6s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.thumb{transition:opacity .3s,transform .4s cubic-bezier(.2,.7,.2,1),border-color .3s}.thumb:hover{transform:translateY(-3px);opacity:1}
+.mcard{transition:transform .5s cubic-bezier(.2,.7,.2,1),border-color .3s}.mcard:hover{transform:translateY(-4px);border-color:rgba(179,176,255,.35)}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.rise{animation:rise 1s cubic-bezier(.2,.7,.2,1) both}.d1{animation-delay:.1s}.d2{animation-delay:.2s}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.fade{animation:fade .5s cubic-bezier(.2,.7,.2,1) both}

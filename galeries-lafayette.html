@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galeries Lafayette — étude de cas</title>
+<meta name="description" content="Refonte du site e-commerce et de l’app iOS Galeries Lafayette.">
+<meta name="author" content="Emmanuel Rolland">
+<meta property="og:title" content="Galeries Lafayette — étude de cas">
+<meta property="og:description" content="Refonte du site e-commerce et de l’app iOS Galeries Lafayette.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/emmanuel-rolland-portrait.webp">
+<meta name="theme-color" content="#0C0C0E">
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/galeries-lafayette.css">
+</head>
+<body>
+<div id="app"></div>
+<noscript><p style="color:#EDEBE6;font-family:sans-serif;padding:40px">Ce site nécessite JavaScript.</p></noscript>
+<template id="dc-template">
+<div id="page-top" style="font-family: 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; color: #EDEBE6; background: #0C0C0E; min-height: 100%; overflow: hidden">
+
+  <header style="position: sticky; top: 0; z-index: 20; background: rgba(12,12,14,.78); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(237,235,230,.07)">
+    <nav aria-label="Navigation principale" style="max-width: 1280px; margin: 0 auto; padding: 18px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
+      <a href="index.html#projets" class="nav-a" style="display: inline-flex; align-items: center; gap: 10px; font-size: 14px; min-height: 44px">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 8H3M7 4L3 8l4 4"></path></svg>
+        Tous les projets
+      </a>
+      <a href="index.html#page-top" aria-label="Emmanuel Rolland — accueil" style="display: flex; align-items: center; min-height: 44px"><img src="assets/images/logo-er.webp" alt="" style="display: block; height: 30px; width: auto"></a>
+      <a class="btn btn-light" href="index.html#contact" style="background: #EDEBE6; color: #0C0C0E; padding: 10px 18px; border-radius: 999px; font-weight: 500; font-size: 14px">Me contacter</a>
+    </nav>
+  </header>
+
+  <!-- HEADER -->
+  <section style="max-width: 1280px; margin: 0 auto; padding: 88px 40px 64px; display: flex; flex-direction: column; gap: 36px">
+    <span class="rise" style="font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #8E8C96">Étude de cas — Galeries Lafayette</span>
+    <h1 class="rise d1" style="margin: 0; max-width: 1080px; font-family: 'Instrument Serif', 'Times New Roman', serif; font-weight: 400; font-size: clamp(52px, 6.4vw, 100px); line-height: 0.98; letter-spacing: -0.02em; text-wrap: balance">Repenser l’expérience e-commerce, <em style="color: #B3B0FF">du site à l’app.</em></h1>
+    <dl class="rise d2" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 24px; border-top: 1px solid rgba(237,235,230,.12); padding-top: 28px">
+      <div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-size: 13px; color: #8E8C96">Rôle</dt><dd style="margin: 0; font-size: 16px">Lead Product Designer</dd></div>
+      <div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-size: 13px; color: #8E8C96">Périmètre</dt><dd style="margin: 0; font-size: 16px">Site e-commerce, app iOS, Design System</dd></div>
+      <div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-size: 13px; color: #8E8C96">Collaboration</dt><dd style="margin: 0; font-size: 16px">Produit, tech &amp; marketing</dd></div>    </dl>
+  </section>
+
+  <!-- PROBLEMATIQUE -->
+  <section style="max-width: 1280px; margin: 0 auto; padding: 0 40px 96px; display: flex; flex-wrap: wrap; gap: 32px 64px">
+    <h2 style="flex: 1 1 240px; margin: 0; font-size: 14px; font-weight: 500; color: #B3B0FF; letter-spacing: .02em">Problématique</h2>
+    <p style="flex: 3 1 560px; min-width: 0; margin: 0; font-family: 'Instrument Serif', serif; font-size: clamp(28px, 2.6vw, 38px); line-height: 1.22; color: #E2E0E6; text-wrap: pretty">Moderniser l’écosystème digital du groupe pour offrir une expérience fluide et cohérente entre le site, l’app et les parcours magasin, tout en renforçant la performance e-commerce.</p>
+  </section>
+
+  <!-- SHOWCASE (interactive) -->
+  <section id="top-showcase" aria-label="Explorer les écrans" style="background: radial-gradient(ellipse at 65% 40%, #22203A, #111114 62%); border-top: 1px solid rgba(237,235,230,.07); border-bottom: 1px solid rgba(237,235,230,.07)">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 88px 40px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+      <div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <span style="font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #8E8C96">Explorer les écrans</span>
+          <h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 52px; line-height: 1; letter-spacing: -0.01em">{{modeTitle}}</h2>
+        </div>
+        <div role="tablist" aria-label="Support" style="display: inline-flex; align-self: flex-start; padding: 4px; border-radius: 999px; background: rgba(237,235,230,.06); border: 1px solid rgba(237,235,230,.1)">
+          <sc-for list="{{modes}}" as="m" hint-placeholder-count="2">
+            <button type="button" role="tab" class="seg" aria-selected="{{m.sel}}" onClick="{{m.pick}}" style="min-height: 44px; padding: 0 22px; border: 0; border-radius: 999px; background: {{m.bg}}; color: {{m.color}}; font: inherit; font-size: 14px; font-weight: 500; cursor: pointer">{{m.label}}</button>
+          </sc-for>
+        </div>
+        <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px">
+          <sc-for list="{{screens}}" as="s" hint-placeholder-count="5">
+            <li>
+              <button type="button" class="row" onClick="{{s.pick}}" aria-current="{{s.current}}" style="width: 100%; text-align: left; display: flex; gap: 18px; align-items: flex-start; padding: 16px 18px; border-radius: 14px; border: 1px solid {{s.border}}; background: {{s.bg}}; color: #EDEBE6; font: inherit; cursor: pointer">
+                <span style="font-family: 'Instrument Serif', serif; font-size: 22px; line-height: 1; color: {{s.numColor}}; min-width: 28px; padding-top: 2px">{{s.num}}</span>
+                <span style="display: flex; flex-direction: column; gap: 4px">
+                  <span style="font-size: 16px; font-weight: 500">{{s.title}}</span>
+                  <span style="font-size: 14px; line-height: 1.5; color: #A3A1AA">{{s.desc}}</span>
+                </span>
+              </button>
+            </li>
+          </sc-for>
+        </ol>
+      </div>
+
+      <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 24px">
+        <div style="position: relative; width: 320px; max-width: 100%; aspect-ratio: 640 / 1301; filter: drop-shadow(0 50px 70px rgba(0,0,0,.6))">
+          <sc-for list="{{screens}}" as="s" hint-placeholder-count="5">
+            <img class="scr" src="{{s.src}}" alt="{{s.alt}}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; opacity: {{s.op}}; transform: {{s.tf}}">
+          </sc-for>
+        </div>
+        <div style="display: flex; align-items: center; gap: 16px">
+          <button type="button" class="icon-btn" onClick="{{prev}}" aria-label="Écran précédent" style="width: 48px; height: 48px; border-radius: 50%; border: 1px solid rgba(237,235,230,.2); background: transparent; color: #EDEBE6; cursor: pointer; display: flex; align-items: center; justify-content: center">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 8H3M7 4L3 8l4 4"></path></svg>
+          </button>
+          <span style="font-size: 14px; color: #A3A1AA; min-width: 64px; text-align: center">{{counter}}</span>
+          <button type="button" class="icon-btn" onClick="{{next}}" aria-label="Écran suivant" style="width: 48px; height: 48px; border-radius: 50%; border: 1px solid rgba(237,235,230,.2); background: transparent; color: #EDEBE6; cursor: pointer; display: flex; align-items: center; justify-content: center">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8h10M9 4l4 4-4 4"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section style="max-width: 1280px; margin: 0 auto; padding: 112px 40px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(480px, 100%), 1fr)); gap: 56px">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <span style="font-size: 13px; color: #B3B0FF">01 — Site</span>
+      <h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 44px; line-height: 1.04">galerieslafayette.com</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B5B3BC">Refonte complète du site e-commerce, avec une approche centrée sur l’expérience utilisateur et la cohérence de marque.</p>
+      <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B5B3BC">Le projet a introduit plusieurs évolutions majeures : une nouvelle interface moderne et épurée, une refonte du tunnel d’achat, une présentation produit repensée et l’ajout d’une fonctionnalité de favoris pour améliorer la rétention et la conversion.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <span style="font-size: 13px; color: #B3B0FF">02 — Application</span>
+      <h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 44px; line-height: 1.04">Application iOS</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B5B3BC">Reconstruction intégrale de l’expérience mobile avec une approche app native : navigation repensée, performances optimisées et synchronisation en temps réel des listes de favoris entre le site et l’application.</p>
+      <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B5B3BC">Cette refonte a permis d’offrir une expérience fluide, cohérente et personnalisée, tout en renforçant la connexion entre les usages web et mobile.</p>
+    </div>
+  </section>
+
+  <!-- KEY CHANGES -->
+  <section style="max-width: 1280px; margin: 0 auto; padding: 72px 40px 112px; display: flex; flex-direction: column; gap: 32px">
+    <h2 style="margin: 0; font-size: 14px; font-weight: 500; color: #8E8C96; letter-spacing: .14em; text-transform: uppercase">Évolutions clés</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr)); gap: 16px">
+      <div style="border: 1px solid rgba(237,235,230,.09); border-radius: 18px; padding: 26px; display: flex; flex-direction: column; gap: 28px; min-height: 180px; justify-content: space-between"><span style="font-family: 'Instrument Serif', serif; font-size: 28px; color: #B3B0FF">01</span><span style="font-size: 16px; line-height: 1.45">Interface moderne et épurée</span></div>
+      <div style="border: 1px solid rgba(237,235,230,.09); border-radius: 18px; padding: 26px; display: flex; flex-direction: column; gap: 28px; min-height: 180px; justify-content: space-between"><span style="font-family: 'Instrument Serif', serif; font-size: 28px; color: #B3B0FF">02</span><span style="font-size: 16px; line-height: 1.45">Tunnel d’achat refondu</span></div>
+      <div style="border: 1px solid rgba(237,235,230,.09); border-radius: 18px; padding: 26px; display: flex; flex-direction: column; gap: 28px; min-height: 180px; justify-content: space-between"><span style="font-family: 'Instrument Serif', serif; font-size: 28px; color: #B3B0FF">03</span><span style="font-size: 16px; line-height: 1.45">Présentation produit repensée</span></div>
+      <div style="border: 1px solid rgba(237,235,230,.09); border-radius: 18px; padding: 26px; display: flex; flex-direction: column; gap: 28px; min-height: 180px; justify-content: space-between"><span style="font-family: 'Instrument Serif', serif; font-size: 28px; color: #B3B0FF">04</span><span style="font-size: 16px; line-height: 1.45">Favoris synchronisés web ↔ app</span></div>
+      <div style="border: 1px solid rgba(237,235,230,.09); border-radius: 18px; padding: 26px; display: flex; flex-direction: column; gap: 28px; min-height: 180px; justify-content: space-between"><span style="font-family: 'Instrument Serif', serif; font-size: 28px; color: #B3B0FF">05</span><span style="font-size: 16px; line-height: 1.45">Design System structuré à l’échelle du groupe</span></div>
+    </div>
+  </section>
+
+  <!-- FULL STRIP -->
+  <section aria-label="Toute la série" style="border-top: 1px solid rgba(237,235,230,.07); padding: 96px 0 112px; background: #0F0F12">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 0 40px; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap">
+        <h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 44px; line-height: 1">{{stripTitle}}</h2>
+        <span style="font-size: 14px; color: #8E8C96">Cliquez sur un écran pour l’explorer</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(190px, 100%), 1fr)); gap: 24px; align-items: end">
+        <sc-for list="{{screens}}" as="s" hint-placeholder-count="5">
+          <a class="strip-item" href="#top-showcase" onClick="{{s.pick}}" aria-label="Explorer : {{s.title}}" style="display: flex; flex-direction: column; align-items: center; gap: 14px; opacity: {{s.stripOp}}">
+            <img src="{{s.src}}" alt="" style="width: 100%; max-width: 210px; aspect-ratio: 640 / 1301; object-fit: contain; filter: drop-shadow(0 26px 40px rgba(0,0,0,.55))">
+            <span style="font-size: 13px; color: #A3A1AA; text-align: center">{{s.title}}</span>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEXT -->
+  <a class="next" href="totalenergies.html#page-top" style="display: block; border-top: 1px solid rgba(237,235,230,.07)">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 72px 40px 88px; display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <span style="font-size: 13px; color: #8E8C96">Projet suivant</span>
+        <span style="font-family: 'Instrument Serif', serif; font-size: clamp(44px, 6vw, 88px); line-height: 1">TotalEnergies</span>
+      </div>
+      <svg class="next-arrow" aria-hidden="true" width="56" height="56" viewBox="0 0 16 16" fill="none" stroke="#B3B0FF" stroke-width="0.8"><path d="M3 8h10M9 4l4 4-4 4"></path></svg>
+    </div>
+  </a>
+</div>
+</template>
+<script type="text/x-dc" data-props='{}'>
+class Component extends DCLogic {
+  componentDidMount() {
+    const run = () => { try { const el = document.getElementById('page-top'); let n = el; while (n) { if (n.scrollTop) n.scrollTop = 0; n = n.parentElement; } window.scrollTo(0, 0); if (document.scrollingElement) document.scrollingElement.scrollTop = 0; } catch (e) {} };
+    run(); setTimeout(run, 30); setTimeout(run, 250);
+  }
+  state = { mode: 'app', i: 0 };
+  renderVals() {
+    const DATA = {
+      app: [
+        { src: 'assets/images/gl-app-home.webp', title: 'Accueil personnalisé', desc: 'Un accueil nominatif, une recherche toujours accessible et une navigation par onglets natifs.' },
+        { src: 'assets/images/gl-app-polo.webp', title: 'Fiche produit en bottom sheet', desc: 'Variantes couleur en vignettes, taille et quantité réunies sous le pouce.' },
+        { src: 'assets/images/gl-app-reco.webp', title: 'Recommandations', desc: '« Découvrez également » prolonge la visite sans quitter le contexte produit.' },
+        { src: 'assets/images/gl-app-jacquemus.webp', title: 'Ajout au panier', desc: 'Un appel à l’action unique, lisible et toujours visible.' },
+        { src: 'assets/images/gl-app-arte.webp', title: 'Navigation empilée', desc: 'Les fiches s’empilent pour passer d’un produit à l’autre et revenir en un geste.' }
+      ],
+      site: [
+        { src: 'assets/images/gl-site-collections.webp', title: 'Entrée par univers', desc: 'Femme, Homme, Enfant, Beauté, Maison, Luxe : les collections en un coup d’œil.' },
+        { src: 'assets/images/gl-site-iconic.webp', title: 'Mise en avant éditoriale', desc: 'Des sélections « Icônes de style » qui mêlent contenu et produits.' },
+        { src: 'assets/images/gl-site-ami.webp', title: 'Fiche produit repensée', desc: 'Visuel plein cadre, badge engagement et accès direct à la marque.' },
+        { src: 'assets/images/gl-site-dior.webp', title: 'Page marque', desc: 'Un header éditorial, des raccourcis par catégorie, filtrer et trier.' },
+        { src: 'assets/images/gl-site-chanel.webp', title: 'Page marque & filtres', desc: 'Un gabarit unique qui s’adapte à l’univers de chaque maison.' }
+      ]
+    };
+    const mode = this.state.mode;
+    const i = this.state.i;
+    const list = DATA[mode];
+    const screens = list.map((s, k) => {
+      const on = k === i;
+      return {
+        ...s,
+        alt: (mode === 'app' ? 'App iOS Galeries Lafayette — ' : 'Site mobile Galeries Lafayette — ') + s.title,
+        num: String(k + 1).padStart(2, '0'),
+        op: on ? 1 : 0,
+        tf: on ? 'translateY(0) scale(1)' : 'translateY(14px) scale(.98)',
+        bg: on ? 'rgba(237,235,230,.07)' : 'transparent',
+        border: on ? 'rgba(179,176,255,.35)' : 'transparent',
+        numColor: on ? '#B3B0FF' : '#6E6C76',
+        current: on ? 'true' : 'false',
+        stripOp: on ? 1 : 0.75,
+        pick: () => this.setState({ i: k })
+      };
+    });
+    const modes = [
+      { key: 'app', label: 'App iOS' },
+      { key: 'site', label: 'Site mobile' }
+    ].map((m) => {
+      const on = m.key === mode;
+      return { ...m, sel: on ? 'true' : 'false', bg: on ? '#EDEBE6' : 'transparent', color: on ? '#0C0C0E' : '#C9C7CF', pick: () => this.setState({ mode: m.key, i: 0 }) };
+    });
+    return {
+      screens, modes,
+      modeTitle: mode === 'app' ? 'Application iOS' : 'Site e-commerce mobile',
+      stripTitle: mode === 'app' ? 'Toute la série — App iOS' : 'Toute la série — Site mobile',
+      counter: String(i + 1).padStart(2, '0') + ' / ' + String(list.length).padStart(2, '0'),
+      prev: () => this.setState({ i: (i - 1 + list.length) % list.length }),
+      next: () => this.setState({ i: (i + 1) % list.length })
+    };
+  }
+}
+</script>
+<script src="assets/js/dc-runtime.js"></script>
+</body>
+</html>

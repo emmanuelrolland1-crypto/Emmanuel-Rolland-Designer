@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Méthodologie UX Research</title>
+<meta name="description" content="Méthodologie UX Research : cadrer, explorer, synthétiser, tester, mesurer.">
+<meta name="author" content="Emmanuel Rolland">
+<meta property="og:title" content="Méthodologie UX Research">
+<meta property="og:description" content="Méthodologie UX Research : cadrer, explorer, synthétiser, tester, mesurer.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/emmanuel-rolland-portrait.webp">
+<meta name="theme-color" content="#0C0C0E">
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/methodologie.css">
+</head>
+<body>
+<div id="app"></div>
+<noscript><p style="color:#EDEBE6;font-family:sans-serif;padding:40px">Ce site nécessite JavaScript.</p></noscript>
+<template id="dc-template">
+<div id="page-top" style="font-family: 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; color: #EDEBE6; background: #0C0C0E; min-height: 100%; overflow: hidden">
+
+  <header style="position: sticky; top: 0; z-index: 20; background: rgba(12,12,14,.78); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(237,235,230,.07)">
+    <nav aria-label="Navigation principale" style="max-width: 1280px; margin: 0 auto; padding: 18px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
+      <a href="index.html#page-top" class="nav-a" style="display: inline-flex; align-items: center; gap: 10px; font-size: 14px; min-height: 44px">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 8H3M7 4L3 8l4 4"></path></svg>
+        Accueil
+      </a>
+      <a href="index.html#page-top" aria-label="Emmanuel Rolland — accueil" style="display: flex; align-items: center; min-height: 44px"><img src="assets/images/logo-er.webp" alt="" style="display: block; height: 30px; width: auto"></a>
+      <a class="btn-light" href="index.html#contact" style="background: #EDEBE6; color: #0C0C0E; padding: 10px 18px; border-radius: 999px; font-weight: 500; font-size: 14px">Me contacter</a>
+    </nav>
+  </header>
+
+  <section style="max-width: 1280px; margin: 0 auto; padding: 96px 40px 80px; display: flex; flex-wrap: wrap; gap: 48px 64px; align-items: center">
+    <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 32px">
+    <span class="rise" style="font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #8E8C96">Méthodologie — UX Research</span>
+    <h1 class="rise d1" style="margin: 0; max-width: 1120px; font-family: 'Instrument Serif', 'Times New Roman', serif; font-weight: 400; font-size: clamp(52px, 6.4vw, 100px); line-height: 0.98; letter-spacing: -0.02em; text-wrap: balance">Des décisions fondées sur des preuves, <em style="color: #B3B0FF">pas sur des hypothèses.</em></h1>
+    <p class="rise d2" style="margin: 0; max-width: 680px; font-size: 18px; line-height: 1.6; color: #B5B3BC">Tests, interviews et observation terrain : chaque décision de design s’appuie sur des données qualitatives et quantitatives, puis se mesure sur la conversion, la rétention et la satisfaction.</p>
+    </div>
+    <figure class="rise d2" style="flex: 1 1 320px; min-width: 0; max-width: 420px; margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <img src="assets/images/emmanuel-rolland-portrait.webp" alt="Portrait d’Emmanuel Rolland, Lead UX Designer" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 55% 20%; border-radius: 24px; box-shadow: 0 40px 80px rgba(0,0,0,.45)">
+      <figcaption style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 500">Emmanuel Rolland</span><span style="font-size: 13px; color: #8E8C96">Lead UX / Product Designer</span></figcaption>
+    </figure>
+  </section>
+
+  <!-- PROCESS (interactive) -->
+  <section aria-label="Processus en 5 étapes" style="background: #101013; border-top: 1px solid rgba(237,235,230,.07); border-bottom: 1px solid rgba(237,235,230,.07)">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 96px 40px; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap">
+        <h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(40px, 4.4vw, 64px); line-height: 1">Le processus, en 5 temps</h2>
+        <span style="font-size: 14px; color: #8E8C96">Sélectionnez une étape</span>
+      </div>
+
+      <div style="position: relative; height: 2px; background: rgba(237,235,230,.1); border-radius: 2px">
+        <div class="bar" style="position: absolute; left: 0; top: 0; height: 2px; width: {{progress}}; background: #B3B0FF; border-radius: 2px"></div>
+      </div>
+
+      <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 12px">
+        <sc-for list="{{steps}}" as="s" hint-placeholder-count="5">
+          <li>
+            <button type="button" class="step" onClick="{{s.pick}}" aria-current="{{s.current}}" style="width: 100%; min-height: 112px; text-align: left; display: flex; flex-direction: column; justify-content: space-between; gap: 18px; padding: 20px; border-radius: 18px; border: 1px solid {{s.border}}; background: {{s.bg}}; color: {{s.color}}; font: inherit; cursor: pointer">
+              <span style="font-family: 'Instrument Serif', serif; font-size: 26px; line-height: 1">{{s.num}}</span>
+              <span style="font-size: 17px; font-weight: 500">{{s.name}}</span>
+            </button>
+          </li>
+        </sc-for>
+      </ol>
+
+      <div class="fade" style="display: flex; flex-wrap: wrap; gap: 40px 64px; border: 1px solid rgba(237,235,230,.09); border-radius: 24px; padding: 40px; background: #0C0C0E">
+        <div style="flex: 2 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+          <span style="font-size: 13px; color: #B3B0FF">Étape {{cur.num}}</span>
+          <h3 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 48px; line-height: 1.02">{{cur.headline}}</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B5B3BC">{{cur.text}}</p>
+        </div>
+        <div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+          <div style="display: flex; flex-direction: column; gap: 12px">
+            <span style="font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #8E8C96">Méthodes</span>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px">
+              <sc-for list="{{cur.methods}}" as="m" hint-placeholder-count="3">
+                <span style="font-size: 13px; padding: 7px 12px; border-radius: 999px; background: rgba(179,176,255,.12); color: #D6D4FF">{{m}}</span>
+              </sc-for>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 12px">
+            <span style="font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #8E8C96">Livrables</span>
+            <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px">
+              <sc-for list="{{cur.deliverables}}" as="d" hint-placeholder-count="3">
+                <li style="display: flex; gap: 10px; align-items: baseline; font-size: 15px; color: #DEDCE2"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 50%; background: #B3B0FF; flex: none; transform: translateY(-2px)"></span>{{d}}</li>
+              </sc-for>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TERRAIN -->
+  <section style="max-width: 1280px; margin: 0 auto; padding: 112px 40px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+    <figure style="flex: 3 1 560px; min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 14px">
+      <div style="position: relative; width: 100%; aspect-ratio: 4 / 3; border-radius: 22px; overflow: hidden; background: #08080A">
+        <sc-for list="{{photos}}" as="p" hint-placeholder-count="3">
+          <img class="gimg" src="{{p.src}}" alt="{{p.alt}}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: {{p.fit}}; opacity: {{p.op}}; transform: {{p.tf}}">
+        </sc-for>
+      </div>
+      <figcaption style="font-size: 13px; color: #8E8C96; min-height: 20px">{{photoCaption}}</figcaption>
+      <div role="group" aria-label="Choisir une photo" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px">
+        <sc-for list="{{photos}}" as="p" hint-placeholder-count="3">
+          <button type="button" class="thumb" onClick="{{p.pick}}" aria-pressed="{{p.pressed}}" aria-label="Voir : {{p.short}}" style="padding: 0; border-radius: 12px; overflow: hidden; border: 2px solid {{p.border}}; opacity: {{p.thumbOp}}; background: transparent; cursor: pointer; aspect-ratio: 3 / 2">
+            <img src="{{p.src}}" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover">
+          </button>
+        </sc-for>
+      </div>
+    </figure>
+    <div style="flex: 2 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+      <span style="font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #8E8C96">Sur le terrain</span>
+      <h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 48px; line-height: 1.02">Tester là où le produit est utilisé.</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B5B3BC">Les meilleures intuitions naissent au contact des utilisateurs, dans leur contexte réel. Prototype en main, j’observe, je questionne et j’itère avec eux — en laboratoire derrière une vitre sans teint comme sur le terrain — puis je confronte ces apprentissages aux données d’usage.</p>
+    </div>
+  </section>
+
+  <!-- TOOLKIT (interactive filter) -->
+  <section style="border-top: 1px solid rgba(237,235,230,.07)">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 96px 40px 112px; display: flex; flex-direction: column; gap: 36px">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+        <h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(40px, 4.4vw, 64px); line-height: 1">Boîte à outils</h2>
+        <div role="group" aria-label="Filtrer les méthodes" style="display: flex; gap: 8px; flex-wrap: wrap">
+          <sc-for list="{{kinds}}" as="k" hint-placeholder-count="3">
+            <button type="button" class="tab" onClick="{{k.pick}}" aria-pressed="{{k.pressed}}" style="min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid {{k.border}}; background: {{k.bg}}; color: {{k.color}}; font: inherit; font-size: 14px; cursor: pointer">{{k.label}}</button>
+          </sc-for>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px">
+        <sc-for list="{{tools}}" as="t" hint-placeholder-count="8">
+          <div class="mcard" style="border: 1px solid rgba(237,235,230,.09); border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 12px; min-height: 170px">
+            <span style="align-self: flex-start; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; padding: 5px 9px; border-radius: 999px; border: 1px solid rgba(237,235,230,.16); color: #C9C7CF">{{t.kind}}</span>
+            <span style="font-size: 18px; font-weight: 500">{{t.name}}</span>
+            <span style="font-size: 14px; line-height: 1.55; color: #A3A1AA">{{t.why}}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- PODCAST -->
+  <section aria-label="Podcast" style="border-top: 1px solid rgba(237,235,230,.07); background: radial-gradient(ellipse at 75% 40%, #1F1B4A, #0C0C0E 62%)">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 112px 40px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+      <div style="flex: 2 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+        <span style="font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #8E8C96">Podcast · MANEW — Épisode 01</span>
+        <h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(40px, 4.4vw, 64px); line-height: 1">Le design system <em style="color: #B3B0FF">du « in vivo ».</em></h2>
+        <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B5B3BC">Dans MANEW, mon podcast, je partage ma vision du design system pensé au contact du terrain et des équipes produit.</p>
+        <p style="margin: 0; font-size: 14px; color: #8E8C96">Emmanuel Rolland — Lead Product Designer</p>
+        <a class="btn-light" href="https://www.youtube.com/watch?v=1kUJawEesUk" target="_blank" rel="noopener" style="align-self: flex-start; background: #EDEBE6; color: #0C0C0E; padding: 15px 24px; border-radius: 999px; font-weight: 500; font-size: 15px; min-height: 48px; display: inline-flex; align-items: center; gap: 10px">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M5 3.5v9l7.5-4.5z"></path></svg>
+          Écouter l’épisode sur YouTube
+        </a>
+      </div>
+      <a class="pod" href="https://www.youtube.com/watch?v=1kUJawEesUk" target="_blank" rel="noopener" aria-label="Voir l’épisode 01 du MANEW Podcast sur YouTube" style="flex: 3 1 520px; min-width: 0; position: relative; display: block; border-radius: 22px; overflow: hidden; box-shadow: 0 40px 80px rgba(0,0,0,.5)">
+        <img src="assets/images/manew-podcast-ep01.webp" alt="Visuel du MANEW Podcast, épisode 01 : Le Design system du « in vivo », avec Emmanuel Rolland" style="display: block; width: 100%; aspect-ratio: 1800 / 1011; object-fit: cover">
+        <span aria-hidden="true" class="pod-play" style="position: absolute; left: 50%; top: 50%; width: 76px; height: 76px; margin: -38px 0 0 -38px; border-radius: 50%; background: rgba(237,235,230,.92); color: #0C0C0E; display: flex; align-items: center; justify-content: center">
+          <svg width="26" height="26" viewBox="0 0 16 16" fill="currentColor"><path d="M5 3.5v9l7.5-4.5z"></path></svg>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="border-top: 1px solid rgba(237,235,230,.07)">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 112px 40px 120px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 26px">
+      <h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(48px, 6vw, 96px); line-height: 0.98; letter-spacing: -0.02em">Besoin d’éclairer <em style="color: #B3B0FF">une décision produit ?</em></h2>
+      <a class="btn-light" href="index.html#contact" style="background: #EDEBE6; color: #0C0C0E; padding: 16px 28px; border-radius: 999px; font-weight: 500; font-size: 15px; min-height: 50px; display: inline-flex; align-items: center">Parlons de votre projet</a>
+    </div>
+  </section>
+</div>
+</template>
+<script type="text/x-dc" data-props='{}'>
+class Component extends DCLogic {
+  componentDidMount() {
+    const run = () => { try { const el = document.getElementById('page-top'); let n = el; while (n) { if (n.scrollTop) n.scrollTop = 0; n = n.parentElement; } window.scrollTo(0, 0); if (document.scrollingElement) document.scrollingElement.scrollTop = 0; } catch (e) {} };
+    run(); setTimeout(run, 30); setTimeout(run, 250);
+  }
+  state = { i: 0, kind: 'Toutes', ph: 0 };
+  renderVals() {
+    const S = [
+      { name: 'Cadrer', headline: 'Poser les bonnes questions.', text: 'Aligner objectifs business et besoins utilisateurs : on formule les hypothèses à vérifier, les questions de recherche et les indicateurs de succès avant de dessiner le moindre écran.', methods: ['Atelier de cadrage', 'Audit analytics', 'Benchmark'], deliverables: ['Brief de recherche', 'Hypothèses priorisées', 'KPIs de succès'] },
+      { name: 'Explorer', headline: 'Comprendre les usages réels.', text: 'Interviews, observation terrain et analyse des données existantes (analytics, retours clients) pour comprendre ce que les utilisateurs font vraiment — pas seulement ce qu’ils disent.', methods: ['Interviews utilisateurs', 'Observation terrain', 'Analyse des retours clients'], deliverables: ['Guide d’entretien', 'Notes et verbatims', 'Données d’usage'] },
+      { name: 'Synthétiser', headline: 'Transformer le bruit en insights.', text: 'Regrouper, prioriser, rendre lisible : les apprentissages deviennent des personas, des parcours et une liste d’opportunités partagée avec le produit, la tech et le marketing.', methods: ['Affinity mapping', 'Personas', 'Customer journey'], deliverables: ['Insights clés', 'Parcours cibles', 'Matrice d’opportunités'] },
+      { name: 'Prototyper & tester', headline: 'Valider avant de développer.', text: 'Des prototypes réalistes, testés tôt et souvent avec de vrais utilisateurs. Chaque itération réduit le risque et le coût de développement.', methods: ['Prototypes Figma', 'Tests modérés', 'Tests non modérés'], deliverables: ['Prototype interactif', 'Rapport de test', 'Recommandations priorisées'] },
+      { name: 'Mesurer', headline: 'Prouver l’impact.', text: 'Après la mise en production, on suit la conversion, la rétention et la satisfaction. Les résultats alimentent le prochain cycle d’amélioration.', methods: ['A/B tests', 'Suivi des KPIs', 'Enquêtes de satisfaction'], deliverables: ['Tableau de bord', 'Bilan d’impact', 'Backlog d’optimisation'] }
+    ];
+    const i = this.state.i;
+    const steps = S.map((s, k) => {
+      const on = k === i;
+      const done = k < i;
+      return {
+        ...s, num: String(k + 1).padStart(2, '0'),
+        current: on ? 'step' : 'false',
+        bg: on ? '#EDEBE6' : 'transparent',
+        color: on ? '#0C0C0E' : (done ? '#EDEBE6' : '#A3A1AA'),
+        border: on ? '#EDEBE6' : (done ? 'rgba(179,176,255,.4)' : 'rgba(237,235,230,.12)'),
+        pick: () => this.setState({ i: k })
+      };
+    });
+    const cur = { ...S[i], num: String(i + 1).padStart(2, '0') };
+    const TOOLS = [
+      { kind: 'Qualitatif', name: 'Interviews utilisateurs', why: 'Comprendre motivations, freins et contexte d’usage.' },
+      { kind: 'Qualitatif', name: 'Observation terrain', why: 'Voir les usages réels, là où le produit est utilisé.' },
+      { kind: 'Qualitatif', name: 'Tests utilisateurs', why: 'Valider un parcours sur prototype avant le développement.' },
+      { kind: 'Qualitatif', name: 'Tri de cartes', why: 'Construire une architecture de l’information intuitive.' },
+      { kind: 'Quantitatif', name: 'Analytics', why: 'Repérer les points de friction dans les parcours.' },
+      { kind: 'Quantitatif', name: 'A/B tests', why: 'Arbitrer entre deux options sur des données réelles.' },
+      { kind: 'Quantitatif', name: 'Questionnaires', why: 'Mesurer la satisfaction et prioriser à grande échelle.' },
+      { kind: 'Quantitatif', name: 'Suivi des KPIs', why: 'Conversion, rétention, satisfaction : mesurer l’impact.' }
+    ];
+    const kind = this.state.kind;
+    const tools = TOOLS.filter((t) => kind === 'Toutes' || t.kind === kind);
+    const kinds = ['Toutes', 'Qualitatif', 'Quantitatif'].map((label) => {
+      const on = label === kind;
+      return { label, pressed: on ? 'true' : 'false', bg: on ? '#EDEBE6' : 'transparent', color: on ? '#0C0C0E' : '#C9C7CF', border: on ? '#EDEBE6' : 'rgba(237,235,230,.18)', pick: () => this.setState({ kind: label }) };
+    });
+    const P = [
+      { src: 'assets/images/test-vitre.webp', fit: 'cover', short: 'Laboratoire de tests', alt: 'Observation d’un test utilisateur derrière une vitre sans teint', caption: 'Tests utilisateurs en laboratoire — observation derrière une vitre sans teint' },
+      { src: 'assets/images/test-gl.webp', fit: 'contain', short: 'Maison du test — Galeries Lafayette', alt: 'Session de test sur prototype à la Maison du test, pour les Galeries Lafayette', caption: 'Galeries Lafayette — Maison du test, tests menés sur prototype' },
+      { src: 'assets/images/hydroptim.webp', fit: 'contain', short: 'Hydroptim — TotalEnergies', alt: 'Session de test terrain du prototype Hydroptim avec un utilisateur', caption: 'TotalEnergies — test du prototype Hydroptim avec un utilisateur métier' }
+    ];
+    const ph = this.state.ph;
+    const photos = P.map((p, k) => {
+      const on = k === ph;
+      return { ...p, op: on ? 1 : 0, tf: on ? 'scale(1)' : 'scale(1.03)', pressed: on ? 'true' : 'false', border: on ? '#B3B0FF' : 'transparent', thumbOp: on ? 1 : 0.55, pick: () => this.setState({ ph: k }) };
+    });
+    return { steps, cur, progress: ((i + 1) / S.length * 100) + '%', tools, kinds, photos, photoCaption: P[ph].caption };
+  }
+}
+</script>
+<script src="assets/js/dc-runtime.js"></script>
+</body>
+</html>

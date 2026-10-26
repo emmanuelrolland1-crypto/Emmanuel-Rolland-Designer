@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TotalEnergies — étude de cas</title>
+<meta name="description" content="Design System global de la Total Digital Factory : 50+ produits, 20+ designers.">
+<meta name="author" content="Emmanuel Rolland">
+<meta property="og:title" content="TotalEnergies — étude de cas">
+<meta property="og:description" content="Design System global de la Total Digital Factory : 50+ produits, 20+ designers.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/emmanuel-rolland-portrait.webp">
+<meta name="theme-color" content="#0C0C0E">
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/totalenergies.css">
+</head>
+<body>
+<div id="app"></div>
+<noscript><p style="color:#EDEBE6;font-family:sans-serif;padding:40px">Ce site nécessite JavaScript.</p></noscript>
+<template id="dc-template">
+<div id="page-top" style="font-family: 'Geist', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; color: #EDEBE6; background: #0C0C0E; min-height: 100%; overflow: hidden">
+
+  <header style="position: sticky; top: 0; z-index: 20; background: rgba(12,12,14,.78); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(237,235,230,.07)">
+    <nav aria-label="Navigation principale" style="max-width: 1280px; margin: 0 auto; padding: 18px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
+      <a href="index.html#projets" class="nav-a" style="display: inline-flex; align-items: center; gap: 10px; font-size: 14px; min-height: 44px">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 8H3M7 4L3 8l4 4"></path></svg>
+        Tous les projets
+      </a>
+      <a href="index.html#page-top" aria-label="Emmanuel Rolland — accueil" style="display: flex; align-items: center; min-height: 44px"><img src="assets/images/logo-er.webp" alt="" style="display: block; height: 30px; width: auto"></a>
+      <a class="btn-light" href="index.html#contact" style="background: #EDEBE6; color: #0C0C0E; padding: 10px 18px; border-radius: 999px; font-weight: 500; font-size: 14px">Me contacter</a>
+    </nav>
+  </header>
+
+  <section style="max-width: 1280px; margin: 0 auto; padding: 88px 40px 64px; display: flex; flex-direction: column; gap: 36px">
+    <span class="rise" style="font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #8E8C96">Étude de cas — TotalEnergies · Total Digital Factory</span>
+    <h1 class="rise d1" style="margin: 0; max-width: 1100px; font-family: 'Instrument Serif', 'Times New Roman', serif; font-weight: 400; font-size: clamp(52px, 6.4vw, 100px); line-height: 0.98; letter-spacing: -0.02em; text-wrap: balance">Un Design System pour <em style="color: #B3B0FF">50 produits, une seule voix.</em></h1>
+    <dl class="rise d2" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 24px; border-top: 1px solid rgba(237,235,230,.12); padding-top: 28px">
+      <div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-size: 13px; color: #8E8C96">Rôle</dt><dd style="margin: 0; font-size: 16px">Design System Manager</dd></div>
+      <div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-size: 13px; color: #8E8C96">Périmètre</dt><dd style="margin: 0; font-size: 16px">Design System global, standards UI/UX</dd></div>
+      <div style="display: flex; flex-direction: column; gap: 6px"><dt style="font-size: 13px; color: #8E8C96">Équipe</dt><dd style="margin: 0; font-size: 16px">20+ designers &amp; consultants</dd></div>    </dl>
+  </section>
+
+  <section style="max-width: 1280px; margin: 0 auto; padding: 0 40px 72px">
+    <img src="assets/images/te-hero-dark.webp" alt="Design System TotalEnergies — logo, couleurs, composants et typographies" style="display: block; width: 100%; border-radius: 24px; aspect-ratio: 1800 / 1201; object-fit: cover">
+  </section>
+
+  <section style="max-width: 1280px; margin: 0 auto; padding: 24px 40px 96px; display: flex; flex-wrap: wrap; gap: 32px 64px">
+    <h2 style="flex: 1 1 240px; margin: 0; font-size: 14px; font-weight: 500; color: #B3B0FF">Problématique</h2>
+    <p style="flex: 3 1 560px; min-width: 0; margin: 0; font-family: 'Instrument Serif', serif; font-size: clamp(28px, 2.6vw, 38px); line-height: 1.22; color: #E2E0E6; text-wrap: pretty">Créer un Design System unifié pour garantir la cohérence et la scalabilité de plus de 50 produits digitaux, dans un contexte d’innovation rapide et de transformation interne.</p>
+  </section>
+
+  <section style="max-width: 1280px; margin: 0 auto; padding: 0 40px 112px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 48px">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <p style="margin: 0; font-size: 17px; line-height: 1.7; color: #B5B3BC">Au sein de la Total Digital Factory, j’ai piloté la création du Design System global destiné à unifier l’ensemble des produits digitaux du groupe. Déployé sur plus de 50 projets, il garantit la cohérence visuelle et fonctionnelle à travers les filiales et feature teams de TotalEnergies.</p>
+      <p style="margin: 0; font-size: 17px; line-height: 1.7; color: #B5B3BC">J’ai coordonné une équipe de plus de 20 designers et consultants, en accompagnant la mise en place des standards UI/UX et des bonnes pratiques produit — pour harmoniser les processus de conception, faciliter la collaboration et assurer une adoption fluide du Design System à chaque étape des projets.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-content: start">
+      <div style="border: 1px solid rgba(237,235,230,.1); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-family: 'Instrument Serif', serif; font-size: 72px; line-height: 1">50<span style="color: #B3B0FF">+</span></span>
+        <span style="font-size: 14px; color: #A3A1AA; line-height: 1.5">produits digitaux alignés sur un même socle</span>
+      </div>
+      <div style="border: 1px solid rgba(237,235,230,.1); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-family: 'Instrument Serif', serif; font-size: 72px; line-height: 1">20<span style="color: #B3B0FF">+</span></span>
+        <span style="font-size: 14px; color: #A3A1AA; line-height: 1.5">designers &amp; consultants coordonnés</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY (interactive) -->
+  <section aria-label="Galerie du projet" style="background: #101013; border-top: 1px solid rgba(237,235,230,.07); border-bottom: 1px solid rgba(237,235,230,.07)">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 96px 40px; display: flex; flex-direction: column; gap: 32px">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <span style="font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #8E8C96">Dans le détail</span>
+          <h2 style="margin: 0; font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 52px; line-height: 1">{{cur.title}}</h2>
+        </div>
+        <div role="tablist" aria-label="Sections" style="display: flex; gap: 8px; flex-wrap: wrap">
+          <sc-for list="{{items}}" as="t" hint-placeholder-count="5">
+            <button type="button" role="tab" class="tab" aria-selected="{{t.sel}}" onClick="{{t.pick}}" style="min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid {{t.border}}; background: {{t.bg}}; color: {{t.color}}; font: inherit; font-size: 14px; cursor: pointer">{{t.tab}}</button>
+          </sc-for>
+        </div>
+      </div>
+      <div style="position: relative; width: 100%; aspect-ratio: 1800 / 1201; border-radius: 24px; overflow: hidden; background: #0E0F11">
+        <sc-for list="{{items}}" as="t" hint-placeholder-count="5">
+          <img class="gimg" src="{{t.src}}" alt="{{t.alt}}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: {{t.fit}}; opacity: {{t.op}}; transform: {{t.tf}}">
+        </sc-for>
+      </div>
+      <p style="margin: 0; max-width: 760px; font-size: 16px; line-height: 1.65; color: #B5B3BC">{{cur.desc}}</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 14px">
+        <sc-for list="{{items}}" as="t" hint-placeholder-count="5">
+          <button type="button" class="thumb" onClick="{{t.pick}}" aria-label="Voir : {{t.title}}" style="padding: 0; border-radius: 12px; overflow: hidden; border: 2px solid {{t.thumbBorder}}; opacity: {{t.thumbOp}}; background: transparent; cursor: pointer; aspect-ratio: 3 / 2">
+            <img src="{{t.src}}" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover">
+          </button>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <a class="next" href="engie.html#page-top" style="display: block">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 72px 40px 88px; display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <span style="font-size: 13px; color: #8E8C96">Projet suivant</span>
+        <span style="font-family: 'Instrument Serif', serif; font-size: clamp(44px, 6vw, 88px); line-height: 1">ENGIE</span>
+      </div>
+      <svg class="next-arrow" aria-hidden="true" width="56" height="56" viewBox="0 0 16 16" fill="none" stroke="#B3B0FF" stroke-width="0.8"><path d="M3 8h10M9 4l4 4-4 4"></path></svg>
+    </div>
+  </a>
+</div>
+</template>
+<script type="text/x-dc" data-props='{}'>
+class Component extends DCLogic {
+  componentDidMount() {
+    const run = () => { try { const el = document.getElementById('page-top'); let n = el; while (n) { if (n.scrollTop) n.scrollTop = 0; n = n.parentElement; } window.scrollTo(0, 0); if (document.scrollingElement) document.scrollingElement.scrollTop = 0; } catch (e) {} };
+    run(); setTimeout(run, 30); setTimeout(run, 250);
+  }
+  state = { i: 0 };
+  renderVals() {
+    const ITEMS = [
+      { tab: 'Guidelines', title: 'Guidelines & bonnes pratiques', src: 'assets/images/te-guidelines-dark.webp', alt: 'Guidelines boutons, liens et comportement des icônes', desc: 'Chaque composant est documenté : usages, hiérarchie, espacements et conseils d’accessibilité (contrastes selon le fond) pour que les feature teams décident vite et bien.' },
+      { tab: 'Responsive', title: 'Gabarits responsive', src: 'assets/images/te-login-dark.webp', alt: 'Écran de connexion TotalEnergies en desktop et mobile', desc: 'Des gabarits prêts à l’emploi, déclinés desktop et mobile, que chaque produit adapte à son nom et à son contexte.' },
+      { tab: 'Templates', title: 'Templates applicatifs', src: 'assets/images/te-form-dark.webp', alt: 'Template d’application avec en-tête, onglets et formulaire d’ajout de fichiers', desc: 'Header, liens d’évitement, onglets, formulaires : un socle applicatif commun qui accélère la conception et la production des interfaces.' },
+      { tab: 'Terrain', title: 'Sur le terrain — Hydroptim', src: 'assets/images/hydroptim.webp', fit: 'contain', alt: 'Session de test du prototype Hydroptim avec un utilisateur', desc: 'Le Design System appliqué à un outil métier (pilotage du réseau H2), testé et itéré directement avec les utilisateurs.' },
+      { tab: 'Vue d’ensemble', title: 'Vue d’ensemble', src: 'assets/images/te-hero-dark.webp', alt: 'Vue d’ensemble du Design System TotalEnergies', desc: 'Logo, iconographie énergies, couleurs, typographies et composants réunis dans une bibliothèque Figma partagée.' }
+    ];
+    const i = this.state.i;
+    const items = ITEMS.map((t, k) => {
+      const on = k === i;
+      return {
+        ...t,
+        fit: t.fit || 'cover',
+        sel: on ? 'true' : 'false',
+        op: on ? 1 : 0,
+        tf: on ? 'scale(1)' : 'scale(1.03)',
+        bg: on ? '#EDEBE6' : 'transparent',
+        color: on ? '#0C0C0E' : '#C9C7CF',
+        border: on ? '#EDEBE6' : 'rgba(237,235,230,.18)',
+        thumbBorder: on ? '#B3B0FF' : 'transparent',
+        thumbOp: on ? 1 : 0.55,
+        pick: () => this.setState({ i: k })
+      };
+    });
+    return { items, cur: ITEMS[i] };
+  }
+}
+</script>
+<script src="assets/js/dc-runtime.js"></script>
+</body>
+</html>
